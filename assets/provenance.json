@@ -1,0 +1,995 @@
+{
+  "version": "2026-09-18",
+  "cases": [
+    {
+      "id": "tennis",
+      "dataset": "panoptic",
+      "scene": "tennis",
+      "cohort": "mixed",
+      "point_id": 364,
+      "slot": 7,
+      "view_slot": 3,
+      "query_frame": 6,
+      "frames": 24,
+      "display_fps": 8,
+      "model_selection": "Primary pseudo-selected TTO; not GT-best saved prediction.",
+      "case_selection": "low_absolute_3d_error",
+      "selection_rule": "Among unique IDs with query <=10, at least 8 visible post-query frames and maximum 3D error <=3 cm on every active frame, choose minimum mean visible post-query 3D error; tie point ID. Camera and poster frame maximize paired projection error reduction.",
+      "selection_uses_gt": true,
+      "crop": [
+        155,
+        167,
+        279,
+        291
+      ],
+      "mean_3d_error_cm": {
+        "mvtracker": 8.309536104046344,
+        "dino_mvtrack": 0.8761263024229748
+      },
+      "metric_mask": "GT-visible in at least one view, strictly after query; mean coordinate error independent of predicted visibility.",
+      "evaluated_frames": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "tto_prediction": {
+        "bytes": 47348,
+        "sha256": "e8b73e78786d88255e9e86b512853abecb02f45dcc45f5397a30b3457d163227"
+      },
+      "mvtracker_prediction": {
+        "bytes": 4586,
+        "sha256": "e5e67c2c651bd9f1364c053cedf4d6d244fab44096da310d5755f46dd5f104a4"
+      },
+      "point_ids_sha256": "2b395f3ba658b177c767ff487de7b37f03269cb42927204eb3258d4ed0ac4e3e",
+      "source_manifest": {
+        "bytes": 9792,
+        "sha256": "d00ddbd410cf984e112c3068e1286af5d06f28b66f2b0a0228fc74fc79293085"
+      },
+      "rgb": [
+        {
+          "frame": 0,
+          "bytes": 247361,
+          "sha256": "37d1613016a240dde7a882ec0c27a787f37aeb47a9a1aeb01303737182ea22ae"
+        },
+        {
+          "frame": 1,
+          "bytes": 249605,
+          "sha256": "c048569e9757e840e4f81d3043d33b190789c0222a6756dc22489f9f1cbc6f69"
+        },
+        {
+          "frame": 2,
+          "bytes": 247936,
+          "sha256": "490881f2876603e6057c5adf2a8d1ce14e5501881c62504e4b79efda012f79d5"
+        },
+        {
+          "frame": 3,
+          "bytes": 249225,
+          "sha256": "d81c110a5a0aaa4d237e3101dde238d2e905f9b6890e201738f175980d0ef72d"
+        },
+        {
+          "frame": 4,
+          "bytes": 251795,
+          "sha256": "1be845078678762031bd0e70ddb1b92dd24e5f5342a8737a7f957efd873668c5"
+        },
+        {
+          "frame": 5,
+          "bytes": 248465,
+          "sha256": "33d26abbc25a730c38260b7da8159e8957bd6189c8a01e56ca63af4966509c8e"
+        },
+        {
+          "frame": 6,
+          "bytes": 247774,
+          "sha256": "113421e080984aeadf028c6d4f64f32cb1d382e728fc7bf1c730642ae0172c34"
+        },
+        {
+          "frame": 7,
+          "bytes": 250778,
+          "sha256": "f2def6a8c65aab5e2d4adbcd687f56aba4123c62e60364adee973e45aa49cce4"
+        },
+        {
+          "frame": 8,
+          "bytes": 247619,
+          "sha256": "d332b8156b78f1f45564065f9d531f3af716157de79d0c618b5e1fc30904cbca"
+        },
+        {
+          "frame": 9,
+          "bytes": 248035,
+          "sha256": "65044232e8b8544de1bccc7e8b450fd960ff5ad7a66243ac05946729280f87e5"
+        },
+        {
+          "frame": 10,
+          "bytes": 247747,
+          "sha256": "25e29271977fffad4b5c26173beb023ae2c532bdcccc52104e41e1f9be163440"
+        },
+        {
+          "frame": 11,
+          "bytes": 249218,
+          "sha256": "901957673340e2337b3f602e4085995086adb19978a854121e51d5add9b1012e"
+        },
+        {
+          "frame": 12,
+          "bytes": 249238,
+          "sha256": "c419ca84072af01b249bcc9e507482b350076a7991cba4fd677f47b5ab9b34b9"
+        },
+        {
+          "frame": 13,
+          "bytes": 249807,
+          "sha256": "16235ba464e4b873339ce447b1628ee1ab5e12ce954010e6c9a79e96045b5816"
+        },
+        {
+          "frame": 14,
+          "bytes": 249875,
+          "sha256": "e5ce814ea49bf74102683feb8b5ac62df2347b73c4cf632b751e51dccd81cf11"
+        },
+        {
+          "frame": 15,
+          "bytes": 250408,
+          "sha256": "2b31d9883669581147e2ada601483b88dda4d1164ba9afd2bca124bfc2b9f921"
+        },
+        {
+          "frame": 16,
+          "bytes": 250375,
+          "sha256": "e71e1acf8c4479e4ab81327ea2797cca208b6d374914e2efc87fb416bebb2d8d"
+        },
+        {
+          "frame": 17,
+          "bytes": 251319,
+          "sha256": "a40556399f9b60e81408837bd4bb1a47172061a8b32e94ff243501d6475810e7"
+        },
+        {
+          "frame": 18,
+          "bytes": 249912,
+          "sha256": "d5fc36742a119767402ccbbb9199cdce2b59d190db0e517dd36ea4a4352029af"
+        },
+        {
+          "frame": 19,
+          "bytes": 249308,
+          "sha256": "36971de878dd17f4532f67371c81bb0f913d3c13350c42866a64dd8a198af2fd"
+        },
+        {
+          "frame": 20,
+          "bytes": 251987,
+          "sha256": "fdc4727b6745bae754fb9ea9608b02ba0017281759c8ee07a6b2f2b6488ef914"
+        },
+        {
+          "frame": 21,
+          "bytes": 251195,
+          "sha256": "772addf0c2ed6b475621ebe07bf577286a949ee9c5af88ab9f841de79c82dc19"
+        },
+        {
+          "frame": 22,
+          "bytes": 249150,
+          "sha256": "866371ca0488835a5429a37fef49b464bba004ca63b1179af398a93e3d1f75e3"
+        },
+        {
+          "frame": 23,
+          "bytes": 246289,
+          "sha256": "417e6a5972c8595948dd7e67b1d7dc9dfbf19935053ae76d7580207cf7700b8e"
+        }
+      ],
+      "max_active_3d_error_cm": 1.5937172174453735
+    },
+    {
+      "id": "dex",
+      "dataset": "dexycb",
+      "scene": "20200709-subject-01__20200709_141754",
+      "cohort": "mixed",
+      "point_id": 365,
+      "slot": 6,
+      "view_slot": 0,
+      "query_frame": 5,
+      "frames": 24,
+      "display_fps": 8,
+      "model_selection": "Primary pseudo-selected TTO; not GT-best saved prediction.",
+      "case_selection": "largest_3d_gain",
+      "selection_rule": "rank mean 3D coordinate improvement on all GT-visible post-query frames; panel ranks projection improvement on common-projectable frames",
+      "selection_uses_gt": true,
+      "crop": [
+        101,
+        145,
+        387,
+        431
+      ],
+      "mean_3d_error_cm": {
+        "mvtracker": 33.20485055063713,
+        "dino_mvtrack": 1.4213163829242093
+      },
+      "metric_mask": "GT-visible in at least one view, strictly after query; mean coordinate error independent of predicted visibility.",
+      "evaluated_frames": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "tto_prediction": {
+        "bytes": 185847,
+        "sha256": "67e3d072173442568df7052cc9b3af3544bba5e169f19eb15a6b805a8f393316"
+      },
+      "mvtracker_prediction": {
+        "bytes": 39046,
+        "sha256": "9f5e3457fb01a77d1ca2d59ed28cd7b9bc51647decb6d67582c77f41f7463e62"
+      },
+      "point_ids_sha256": "d70ac9ba4f2cff6477ce5e0e237568e09d0812e7dfbef4a76b48c6691b621db0",
+      "source_manifest": {
+        "bytes": 10585,
+        "sha256": "44a8cbddd43e66d61587d59c525f237d5dc77dcdaff9b175a8096566961f8065"
+      },
+      "rgb": [
+        {
+          "frame": 0,
+          "bytes": 522572,
+          "sha256": "c2039b1117eedabc25a3b62b9a807cefb214b023a9a03ac569e5f1de04b0fd0a"
+        },
+        {
+          "frame": 1,
+          "bytes": 522279,
+          "sha256": "af0adf84260b70d0bc034b184e6ca09120d5a9b53b8e1d3c5adbadc344a49ee9"
+        },
+        {
+          "frame": 2,
+          "bytes": 522258,
+          "sha256": "0381bb83fac9258a121392b17f7916ac9758f245f49c0c03686c79474ea6d5f1"
+        },
+        {
+          "frame": 3,
+          "bytes": 522060,
+          "sha256": "3a459f28176d716193092788040b74b2aadf07f07a0ea798e1d09784ba002a9b"
+        },
+        {
+          "frame": 4,
+          "bytes": 521911,
+          "sha256": "c3294ab8e87533c2f8d0a25e1347f256adb95bddfeeb6e2d2cd16aa6936e10bb"
+        },
+        {
+          "frame": 5,
+          "bytes": 521410,
+          "sha256": "0a01160466cbdaf231abc62c6cb03b8b70b8ca8883052b2bd6c029d19e612fc1"
+        },
+        {
+          "frame": 6,
+          "bytes": 519858,
+          "sha256": "bb5fd49059c1a1eda2abc30f0c7f4433af60562e93732f64c69f80e4ee42ca2c"
+        },
+        {
+          "frame": 7,
+          "bytes": 518392,
+          "sha256": "7b4b0e186f801e807c2b3fc927e3e68950af83ca44d4822d24d6718773963535"
+        },
+        {
+          "frame": 8,
+          "bytes": 516413,
+          "sha256": "46f1fc86e0dcdcd52dd3d0e4ab078941a8181ffc5d640c6b9382d1b490759779"
+        },
+        {
+          "frame": 9,
+          "bytes": 517115,
+          "sha256": "8092a8d9e82e65c59fe7f146c3e6704d6a0682d6f744ce3bdb08ace8baaa3f40"
+        },
+        {
+          "frame": 10,
+          "bytes": 518125,
+          "sha256": "d6a330dd5db972f7ff64bd53cc88343b2f30bc1d861bd69ae3a5d380f4ab08b1"
+        },
+        {
+          "frame": 11,
+          "bytes": 518169,
+          "sha256": "ff27cf94d680770e75f9d0bbe85eb182919e739e850d55ae6adeb33e6d35a7d8"
+        },
+        {
+          "frame": 12,
+          "bytes": 517687,
+          "sha256": "e989d89a0f0639fea12b20f10c5a3da0ccc50ea9d273df38a445d99db2a784a5"
+        },
+        {
+          "frame": 13,
+          "bytes": 516042,
+          "sha256": "511588626ea389b57d588d781ad34d126533676706ddd1dcf9d9e0d35bd6b6b7"
+        },
+        {
+          "frame": 14,
+          "bytes": 515985,
+          "sha256": "6edff5b41c97de1149d728af5a7f80ae7ccc2daf6faeb3641e9bb57083eaddff"
+        },
+        {
+          "frame": 15,
+          "bytes": 516351,
+          "sha256": "33bda36579b8b00725151f6fb1eb6e342421179fe46ab33889999d176e52c1b4"
+        },
+        {
+          "frame": 16,
+          "bytes": 517166,
+          "sha256": "3ab00db9ec5b1243ee60c00b8f4592135d665b0c6d1d8a4dde402910c1e603eb"
+        },
+        {
+          "frame": 17,
+          "bytes": 518490,
+          "sha256": "8bf71e2143152806a785e1cbc256f79df92ede7e24ad420f9e6974e265888e76"
+        },
+        {
+          "frame": 18,
+          "bytes": 520044,
+          "sha256": "d7ac0dd2ef267fb81de7f88fb414596f87ec75415030d16bb112de5819f33360"
+        },
+        {
+          "frame": 19,
+          "bytes": 519466,
+          "sha256": "47a8ea918c088e55f35bb053f77bd96ee3b2f32f5e966d6178aeb68b9d3b29cd"
+        },
+        {
+          "frame": 20,
+          "bytes": 520315,
+          "sha256": "6228cb21ddc864895ba62faf1f65b0bfb9d3d8995f2764351cf43a4518553a29"
+        },
+        {
+          "frame": 21,
+          "bytes": 521123,
+          "sha256": "6911cd74f9a5185bcd71500ea6470f129e1e0e6b70f142bf14ad69405b11cab0"
+        },
+        {
+          "frame": 22,
+          "bytes": 521122,
+          "sha256": "555ead7ba4792a9b3209aabc8841cbbadd9853ecf5fb6420a9218f659d099983"
+        },
+        {
+          "frame": 23,
+          "bytes": 521858,
+          "sha256": "abb004988a0a78e0a8ff3a6100060ca09c20f36601b53dafd9dfe48e37a1e71f"
+        }
+      ],
+      "max_active_3d_error_cm": 2.64491868019104
+    },
+    {
+      "id": "typical",
+      "dataset": "panoptic",
+      "scene": "tennis",
+      "cohort": "mixed",
+      "point_id": 359,
+      "slot": 0,
+      "view_slot": 0,
+      "query_frame": 10,
+      "frames": 24,
+      "display_fps": 8,
+      "model_selection": "Primary pseudo-selected TTO; not GT-best saved prediction.",
+      "case_selection": "median_3d_gain",
+      "selection_rule": "rank mean 3D coordinate improvement on all GT-visible post-query frames; panel ranks projection improvement on common-projectable frames",
+      "selection_uses_gt": true,
+      "crop": [
+        374,
+        152,
+        494,
+        272
+      ],
+      "mean_3d_error_cm": {
+        "mvtracker": 10.318811093551084,
+        "dino_mvtrack": 1.1019473687104486
+      },
+      "metric_mask": "GT-visible in at least one view, strictly after query; mean coordinate error independent of predicted visibility.",
+      "evaluated_frames": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "tto_prediction": {
+        "bytes": 47348,
+        "sha256": "e8b73e78786d88255e9e86b512853abecb02f45dcc45f5397a30b3457d163227"
+      },
+      "mvtracker_prediction": {
+        "bytes": 4586,
+        "sha256": "e5e67c2c651bd9f1364c053cedf4d6d244fab44096da310d5755f46dd5f104a4"
+      },
+      "point_ids_sha256": "2b395f3ba658b177c767ff487de7b37f03269cb42927204eb3258d4ed0ac4e3e",
+      "source_manifest": {
+        "bytes": 9792,
+        "sha256": "d00ddbd410cf984e112c3068e1286af5d06f28b66f2b0a0228fc74fc79293085"
+      },
+      "rgb": [
+        {
+          "frame": 0,
+          "bytes": 217792,
+          "sha256": "0cac8b7d49133d8c140ed2f62191ebfdfc987cfc3f28bb8aea381b610f420d16"
+        },
+        {
+          "frame": 1,
+          "bytes": 219071,
+          "sha256": "0b1ed1ab730b8f6db1e0e2601f39c2be96cc9e6b08f707c715abd46ec79c964d"
+        },
+        {
+          "frame": 2,
+          "bytes": 218114,
+          "sha256": "1a84a53bd5e946077e73a83f97f331243298cfd7f105084fbef0e54140a8633c"
+        },
+        {
+          "frame": 3,
+          "bytes": 220058,
+          "sha256": "afa91250e24007192ac9e46fc03d5e6aed4bcd85e166cd274a00035d42b6c421"
+        },
+        {
+          "frame": 4,
+          "bytes": 219795,
+          "sha256": "83b79c07b483d21984e8a2b22dcf7edb6894c6a76110fba09f9046734b80b796"
+        },
+        {
+          "frame": 5,
+          "bytes": 221077,
+          "sha256": "6047fa497c931807f94e722e9fd0f12c1d5ea90da0ea074280663348293735d3"
+        },
+        {
+          "frame": 6,
+          "bytes": 220720,
+          "sha256": "e2efcf9bcdd3a70df97a3d2497088898269d80909c100806263f46bc5fe3b53e"
+        },
+        {
+          "frame": 7,
+          "bytes": 220607,
+          "sha256": "b58d43274f2bdd742ffa7ab8592a612c00f5b71e6f0ad2ab5262e657dd8bafe8"
+        },
+        {
+          "frame": 8,
+          "bytes": 221406,
+          "sha256": "fd7bf708c1c8a798ba91d2d0d252a8cc7b6b9645a9e7bca2b505f565a85162cb"
+        },
+        {
+          "frame": 9,
+          "bytes": 222268,
+          "sha256": "741506be8fd52c92126c6c7548996c5966336982a4cc0bb93ad2785d549d7aa2"
+        },
+        {
+          "frame": 10,
+          "bytes": 222687,
+          "sha256": "1220c9ab74ee9f26dbe8d85d4743200aba95c80f0caa20e6b0b52ed84996c3ea"
+        },
+        {
+          "frame": 11,
+          "bytes": 223631,
+          "sha256": "c8368d5af7fbc37b284775e567939d83eb23a408d643ff1ce1b12fc738187237"
+        },
+        {
+          "frame": 12,
+          "bytes": 225705,
+          "sha256": "8e5cc48c5970a6087ae4257a0ce062b329b13305dcb173ef34bc3a50ed12e84e"
+        },
+        {
+          "frame": 13,
+          "bytes": 225776,
+          "sha256": "916981049c11629ef9484e6ed46c69226cf4eb24c05564571b121cfa0084d58f"
+        },
+        {
+          "frame": 14,
+          "bytes": 227326,
+          "sha256": "06cde64d98433dfee5a4357a0347abe6505397d87a07694028240aa0ce11585b"
+        },
+        {
+          "frame": 15,
+          "bytes": 225789,
+          "sha256": "ffef4c0c4d88d9ff337c19a0afb687c387798431ed15bbfa1352429624f6638e"
+        },
+        {
+          "frame": 16,
+          "bytes": 226293,
+          "sha256": "c1ad55baa811b185eb6bfe8a13d37e5b9c154c6fc700a7b577750eac81510ef7"
+        },
+        {
+          "frame": 17,
+          "bytes": 223151,
+          "sha256": "0afa071065f005d26e5198a088de0840b4e6d9b5f44fb532b83e3b22f10d0915"
+        },
+        {
+          "frame": 18,
+          "bytes": 222930,
+          "sha256": "7d48d52acd08e4f4145d55c3b2cc528eaac58be3e7fece468b19774e453477e8"
+        },
+        {
+          "frame": 19,
+          "bytes": 223661,
+          "sha256": "bfbf50fde9ebd8dbd5bdded7023a8136a9cf20442caf914a016dde72d0832f9d"
+        },
+        {
+          "frame": 20,
+          "bytes": 222711,
+          "sha256": "87c2bd31f4b611e878242a7bdb3113c2f2daad29fa82ea04f732d2a36d73b283"
+        },
+        {
+          "frame": 21,
+          "bytes": 221934,
+          "sha256": "108db7c696d631218d7480254a00d58824559ae08a1f40dc1403cd746c1f15e5"
+        },
+        {
+          "frame": 22,
+          "bytes": 220663,
+          "sha256": "caacf672bb5593cd0c78935417364fb010d03f785f0ec163e82c18a06d6b90ce"
+        },
+        {
+          "frame": 23,
+          "bytes": 219568,
+          "sha256": "26f88dafe2d95fe85e8d392a11a7cf026880d7af1ede8741a84454b9aea31b4f"
+        }
+      ],
+      "max_active_3d_error_cm": 2.734384536743164
+    },
+    {
+      "id": "failure",
+      "dataset": "panoptic",
+      "scene": "juggle",
+      "cohort": "mixed",
+      "point_id": 201,
+      "slot": 30,
+      "view_slot": 3,
+      "query_frame": 1,
+      "frames": 24,
+      "display_fps": 8,
+      "model_selection": "Primary pseudo-selected TTO; not GT-best saved prediction.",
+      "case_selection": "least_3d_gain",
+      "selection_rule": "rank mean 3D coordinate improvement on all GT-visible post-query frames; panel ranks projection improvement on common-projectable frames",
+      "selection_uses_gt": true,
+      "crop": [
+        281,
+        240,
+        401,
+        360
+      ],
+      "mean_3d_error_cm": {
+        "mvtracker": 5.818628755489419,
+        "dino_mvtrack": 40.35465777448799
+      },
+      "metric_mask": "GT-visible in at least one view, strictly after query; mean coordinate error independent of predicted visibility.",
+      "evaluated_frames": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "tto_prediction": {
+        "bytes": 72058,
+        "sha256": "6919a69af6b0607961ef97cd32ca7f8b28862f0cf46996fdb13141a1a16b78bb"
+      },
+      "mvtracker_prediction": {
+        "bytes": 12636,
+        "sha256": "e99b8047459804ceea70287df8743b2f0362e736c1d253a3f3cb79e96456c1b4"
+      },
+      "point_ids_sha256": "96d9c8c6029da425301108f7f40638fd397833af216a678527ce614921465c69",
+      "source_manifest": {
+        "bytes": 9758,
+        "sha256": "6183548fc27eedd600c3b5d2f4a47ff43abb81bdd3ec3cc44d90d7d7c7929569"
+      },
+      "rgb": [
+        {
+          "frame": 0,
+          "bytes": 246309,
+          "sha256": "9d56e60703757e91da591676afec4bea744c0b0be15d83c095cdf91d4ec088f7"
+        },
+        {
+          "frame": 1,
+          "bytes": 245174,
+          "sha256": "959a832579e9cac403960cd69009de2ec28060862f0fb6799d7282f474efc204"
+        },
+        {
+          "frame": 2,
+          "bytes": 243639,
+          "sha256": "a170fba2fbac9a392c4bb4954154d4aab1820d39f4b952097e35f146e5075b40"
+        },
+        {
+          "frame": 3,
+          "bytes": 242989,
+          "sha256": "c6aa205204747f008eebe4a46d9ccce400b19e2cdf46063e60867c93d42bf4e1"
+        },
+        {
+          "frame": 4,
+          "bytes": 242431,
+          "sha256": "7858d095e5367dfb0e77d1725600a52aa4eeef36ddc6341807ddd5369a548a6b"
+        },
+        {
+          "frame": 5,
+          "bytes": 241493,
+          "sha256": "a8694f3e258d42eef921024e62b76d1e1c92f0b43014488260493f1204dd2a72"
+        },
+        {
+          "frame": 6,
+          "bytes": 241337,
+          "sha256": "97839b7ffff2ded745b8529a4e49ff137de9cbae9c63cc6da819969f603d3d6a"
+        },
+        {
+          "frame": 7,
+          "bytes": 240860,
+          "sha256": "cb5097eab11e9d1f231ad6d14431577f9aed875eb24fc38c82b36b42270d4b2a"
+        },
+        {
+          "frame": 8,
+          "bytes": 241760,
+          "sha256": "9f61ed1c51e19eff7e90efb5948f97782d5370571dbbc6ccbe2adb2e14501262"
+        },
+        {
+          "frame": 9,
+          "bytes": 240258,
+          "sha256": "91b9c5e9be8c0b150c017e9d5a42fd967803317d88fbe805a2190881e6d773cb"
+        },
+        {
+          "frame": 10,
+          "bytes": 240160,
+          "sha256": "054098fdeafddc4f78e16e27dfc2a42cbd247f88b0be6a7ecbfc70525b7f539a"
+        },
+        {
+          "frame": 11,
+          "bytes": 240734,
+          "sha256": "04b506ee82c8fc64d94dfafedbddea35112e2fcf7b0afd439a5c9c41a1ba33d7"
+        },
+        {
+          "frame": 12,
+          "bytes": 243281,
+          "sha256": "f020f647458f40c1523b0fa5e908cb03d66effd79270f03b4d5ea500d7228847"
+        },
+        {
+          "frame": 13,
+          "bytes": 242185,
+          "sha256": "ac5405c2d6ad39d933e8325a325b1dd749af168724b9368340f948466199abad"
+        },
+        {
+          "frame": 14,
+          "bytes": 242542,
+          "sha256": "a8a091eb4d498185520fc47ec3b82e2db2c6aa21e36d43671b003f3e953f3b7a"
+        },
+        {
+          "frame": 15,
+          "bytes": 245139,
+          "sha256": "74b1fc9b3c18e0c3cd96af352ea60391fd32260e333adc54e8bdb9c2cf0f0e7f"
+        },
+        {
+          "frame": 16,
+          "bytes": 243486,
+          "sha256": "41d011ef14534fe2b40c0ef3013107e7988ae51511b26c18f7646687d71b3c8c"
+        },
+        {
+          "frame": 17,
+          "bytes": 244802,
+          "sha256": "e9be45a352bf72467caeda151eaf213a656811c0667005f4f16aa0b2f7f582e8"
+        },
+        {
+          "frame": 18,
+          "bytes": 244283,
+          "sha256": "234210e2ab47189691f30f79e89c3f6c33e8070376466b01ece1a669a395ea48"
+        },
+        {
+          "frame": 19,
+          "bytes": 243564,
+          "sha256": "0a2f41f5b243eca8816c2679fe82198e9520a352d5cdaebab8ca54cbc36db6a4"
+        },
+        {
+          "frame": 20,
+          "bytes": 241555,
+          "sha256": "1c0494d8ecc430d0f73b177b7a06f47a01553d6b24af3c97e4f18c7499bf2966"
+        },
+        {
+          "frame": 21,
+          "bytes": 240602,
+          "sha256": "917214d5d8d7c7904f58eccb04c4e2a60beb21e941c8884cc2c7a0b130a9cbba"
+        },
+        {
+          "frame": 22,
+          "bytes": 241160,
+          "sha256": "960262790be627fe46c9cd48b244c474f8c5876b6dd3d756dede6d6945a61e2a"
+        },
+        {
+          "frame": 23,
+          "bytes": 246342,
+          "sha256": "7295096e8aca4827348d3f118a1afc83c82fe287ab32ada52fba3043d6003e12"
+        }
+      ],
+      "max_active_3d_error_cm": 50.2058219909668
+    }
+  ],
+  "sources": {},
+  "long_sequence": {
+    "scene": "Panoptic / tennis",
+    "frames": 150,
+    "display_fps": 12,
+    "source_fps": null,
+    "teacher": "Historical full-video CoTracker offline cache; not CoTracker3 online.",
+    "protocol": "Full-sequence pseudo tracks; 8 independently optimized S24 windows, stride 18, overlap 6; merge.",
+    "display_selection": "First occurrence of each of 68 unique input IDs. Require >=120 GT-visible post-query frames, mean visible 3D error <=6 cm, maximum 3D error over ALL post-query frames <=10 cm, visible projection p95 <=15 px and max <=16 px. Rank by p95_3d_cm/10 + p95_2d_px/15, tie point ID; take six. Fixed points for the complete video; no per-frame reselection.",
+    "selection_uses_gt": true,
+    "display_ids": [
+      77,
+      75,
+      64,
+      16,
+      182,
+      359
+    ],
+    "display_slots": [
+      15,
+      14,
+      12,
+      1,
+      29,
+      60
+    ],
+    "selected_points": [
+      {
+        "point_id": 77,
+        "slot": 15,
+        "query_frame": 11,
+        "gt_visible_post_query_frames": 138,
+        "mean_3d_cm": 4.081674575805664,
+        "p95_3d_cm": 5.38468132019043,
+        "max_post_query_3d_cm": 6.065037727355957,
+        "mean_2d_px": 5.339508533477783,
+        "p95_2d_px": 8.782251739501952,
+        "max_2d_px": 11.123680114746094,
+        "eligible": true,
+        "ranking_score": 1.1239515813191732
+      },
+      {
+        "point_id": 75,
+        "slot": 14,
+        "query_frame": 4,
+        "gt_visible_post_query_frames": 145,
+        "mean_3d_cm": 2.9225406646728516,
+        "p95_3d_cm": 7.226016426086419,
+        "max_post_query_3d_cm": 8.969766616821289,
+        "mean_2d_px": 3.86047625541687,
+        "p95_2d_px": 8.536239767074568,
+        "max_2d_px": 14.97165584564209,
+        "eligible": true,
+        "ranking_score": 1.2916842937469464
+      },
+      {
+        "point_id": 64,
+        "slot": 12,
+        "query_frame": 17,
+        "gt_visible_post_query_frames": 132,
+        "mean_3d_cm": 4.830924987792969,
+        "p95_3d_cm": 7.422052955627441,
+        "max_post_query_3d_cm": 8.190059661865234,
+        "mean_2d_px": 5.565152168273926,
+        "p95_2d_px": 11.971478748321532,
+        "max_2d_px": 13.266493797302246,
+        "eligible": true,
+        "ranking_score": 1.5403038787841794
+      },
+      {
+        "point_id": 16,
+        "slot": 1,
+        "query_frame": 22,
+        "gt_visible_post_query_frames": 127,
+        "mean_3d_cm": 5.620217800140381,
+        "p95_3d_cm": 7.457516193389891,
+        "max_post_query_3d_cm": 8.10134220123291,
+        "mean_2d_px": 8.638429641723633,
+        "p95_2d_px": 12.962350845336914,
+        "max_2d_px": 14.749114036560059,
+        "eligible": true,
+        "ranking_score": 1.60990834236145
+      },
+      {
+        "point_id": 182,
+        "slot": 29,
+        "query_frame": 1,
+        "gt_visible_post_query_frames": 146,
+        "mean_3d_cm": 5.551973342895508,
+        "p95_3d_cm": 8.47993540763855,
+        "max_post_query_3d_cm": 8.785102844238281,
+        "mean_2d_px": 6.129487991333008,
+        "p95_2d_px": 11.876089429855345,
+        "max_2d_px": 12.722015380859375,
+        "eligible": true,
+        "ranking_score": 1.6397328360875445
+      },
+      {
+        "point_id": 359,
+        "slot": 60,
+        "query_frame": 10,
+        "gt_visible_post_query_frames": 139,
+        "mean_3d_cm": 5.600496292114258,
+        "p95_3d_cm": 7.801889944076538,
+        "max_post_query_3d_cm": 8.448813438415527,
+        "mean_2d_px": 6.192270278930664,
+        "p95_2d_px": 13.327934265136715,
+        "max_2d_px": 15.96072769165039,
+        "eligible": true,
+        "ranking_score": 1.668717945416768
+      }
+    ],
+    "source_prediction": {
+      "bytes": 120174,
+      "sha256": "10c115498c7cf045417c2a21affe5c1c9cc669a9047fa8feccfa55e070af8cf8"
+    },
+    "prepared_manifest": {
+      "bytes": 223573,
+      "sha256": "2b5dcdd9f0c505f08d6532b7004548215573de686d5a2e449d4f6a9493baa587"
+    },
+    "gt_reference": {
+      "bytes": 679035,
+      "sha256": "a8bd825b10b8e1d6f802862b7217d5207199da780ac888d4246fed32612106ec"
+    },
+    "generator": {
+      "bytes": 8590,
+      "sha256": "0e55428da145b839a2465771f0d724079233c544a6448a4bfde03475e77fd049"
+    },
+    "rgb_manifest_sha256": "37109c49938520898248175fd2247e18a037e269b56b2b32287fd895bc2fe603",
+    "presentation_changes": "Re-render six fixed GT-selected points from unchanged saved predictions and original RGB. Retain all 150 frames and four camera views. No coordinate changes, interpolation or error-dependent frame removal. White crosses show camera-visible GT; circles show predicted coordinates (hollow when any-view visibility is false). Query timing unchanged.",
+    "metrics": {
+      "scope": "Complete original point set; NOT selected display subset",
+      "initialization": {
+        "aj3d_percent": 31.423049265,
+        "mte_cm": 31.716
+      },
+      "independent_tto": {
+        "aj3d_percent": 35.55329357,
+        "mte_cm": 25.68981004
+      }
+    }
+  },
+  "assets": {
+    "icon.svg": {
+      "bytes": 268,
+      "sha256": "f49d27926566ecaaa566876445fbaa42c5ab075e80fa71177a270a38cee71f5f"
+    },
+    "citation.bib": {
+      "bytes": 281,
+      "sha256": "3e27b9297dd2f7efbadbacca138ef61034cdceff62c9bd404e82a275c7a87d33"
+    },
+    "showcase-provenance.json": {
+      "bytes": 56741,
+      "sha256": "61d2b86f1b94820f9f0f575adeee723dfe74d06fb26fbc5e2252f85cf77ed9be"
+    },
+    "gallery-dex-poster.jpg": {
+      "bytes": 144379,
+      "sha256": "25d3f28750d4b85157053ca983878989036e9e8eb2ce3fd6e5d8e7208ceeb465"
+    },
+    "gallery-kubric.mp4": {
+      "bytes": 592591,
+      "sha256": "b228f46a308fe48d43e8fd63a139c3541d6302a4265b21a893c163f009347b57"
+    },
+    "method.svg": {
+      "bytes": 3851,
+      "sha256": "6e79add695ebef4a51d5c5f9d8d49260c0ccaf95b367cf0a58ee3949cf67a202"
+    },
+    "tennis-poster.jpg": {
+      "bytes": 67700,
+      "sha256": "27fcb1cf1e06ef7e0cab3fea51f840ecd66955f8306d73b7e42257e43c0e6d3b"
+    },
+    "failure.mp4": {
+      "bytes": 239398,
+      "sha256": "acfecb47774b6d10c0deb1fa13f05d594f50400361163fce6fda7c3a7ca21195"
+    },
+    "feature-reappearance.png": {
+      "bytes": 1911144,
+      "sha256": "e747b177989982cfa37e469419f7eebe7ea29a4c6101dd03390c41a6bf02ce19"
+    },
+    "feature-reappearance-timeline.png": {
+      "bytes": 944021,
+      "sha256": "3f34861540921af4e8870129257022f537df0e4c88a0114cdf2c1adbc21f917b"
+    },
+    "gallery-kubric-poster.jpg": {
+      "bytes": 186688,
+      "sha256": "57a781289e8ddb2fcd359dba5f6892ed20ee847b702e1abc19ff032837508478"
+    },
+    "typical.mp4": {
+      "bytes": 283404,
+      "sha256": "fbff93676706ac4fddfdcdbf1525eb96f2a11425205e27ff5e6886c1d99e5777"
+    },
+    "feature-cross-view.png": {
+      "bytes": 1003080,
+      "sha256": "1ca57cec5e8a8ac8c3f555921cab786045b53c6bc4eb1ad513b8468c9dc4b0b6"
+    },
+    "gallery-dex.mp4": {
+      "bytes": 352091,
+      "sha256": "4ccac8df941006e7d49c876ca34d58b55e8149d28fc0552ea89155c6f9bb6887"
+    },
+    "long-sequence.mp4": {
+      "bytes": 881297,
+      "sha256": "71518f5a74fa20e5859ba77ee13438104549263e7716359d01738961cf378b85"
+    },
+    "results.json": {
+      "bytes": 10919,
+      "sha256": "7c0df1d8b6d72addd5b2024b9462062eb50c0a2ac5b95025206ad50e3814f2da"
+    },
+    "failure-poster.jpg": {
+      "bytes": 64396,
+      "sha256": "58458744ec1bc37e21bbec41e7dadf165bf680b1d87435af32852198c339442d"
+    },
+    "result-provenance.json": {
+      "bytes": 252628,
+      "sha256": "0d2e08f7bb83e616186275c888c655097358535eb335eff370456f9d188253bb"
+    },
+    "dex-poster.jpg": {
+      "bytes": 111357,
+      "sha256": "fcf511063a4fe7de71dbd3b4e0832a88881f4933180eb65b7124297b5c812435"
+    },
+    "ablations.csv": {
+      "bytes": 944,
+      "sha256": "a9616e5694126aa395e81e7196c7bd277dcf332645c900ac279c7a8cb39c5b8e"
+    },
+    "input-views.svg": {
+      "bytes": 107390,
+      "sha256": "c35f0fe27e2a87e23b158144ca33eceea7227b15347bdc0a6e798c0e37d710dd"
+    },
+    "dex.mp4": {
+      "bytes": 362597,
+      "sha256": "aeb3c06b1d53970d01534b16b4e2d94b308235d368e84dcf9d3936aec972de4c"
+    },
+    "typical-poster.jpg": {
+      "bytes": 70094,
+      "sha256": "23390782f5ac39929a9d61cbc63529957d0c31100db1206d70b8c4ab20fab178"
+    },
+    "results.csv": {
+      "bytes": 4906,
+      "sha256": "4827ce6c2ff550dbdf933b343400215a8ad88f367bd01d9deaea15086c595c98"
+    },
+    "comparison.gif": {
+      "bytes": 2224120,
+      "sha256": "894f59cd76291f62acbafde57f30fa3024b704b26f7490da8c479301d07b3a13"
+    },
+    "ablations.json": {
+      "bytes": 29563,
+      "sha256": "b52158a6a79b6883ca632c14e83af46d445aebe69a051541adbba5d8616ff785"
+    },
+    "tennis.mp4": {
+      "bytes": 305505,
+      "sha256": "3fc6010ab61c370c31656f3d9ef61ae8c0bad07c6bdca568b3e0912950adc1ba"
+    },
+    "long-poster.jpg": {
+      "bytes": 121460,
+      "sha256": "a7033b3b6623a985833022fb978bd4a4ebdb9f1f4b144fe7d1aeaa686130a455"
+    },
+    "long-preview.gif": {
+      "bytes": 2830519,
+      "sha256": "f4d4dbcbf70602719c825e1ca8c2489f568f54dcc3ffee2e016be840b450edcc"
+    }
+  }
+}
