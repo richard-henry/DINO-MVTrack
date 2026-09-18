@@ -1,0 +1,30 @@
+__pycache__/
+*.py[cod]
+.venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+.idea/
+.vscode/
+/data/
+/weights/
+/checkpoints*/
+/outputs/
+/logs*/
+/configs/scene.json
+*.pth
+*.pt
+*.ckpt
+*.npz
+*.npy
+
+# Internal research records are maintained outside the public repository.
+/docs/PHASE*
+/docs/phase*/
+/docs/analysis/
+/configs/phase*/
+/scripts/phase*
+/paper/
+
+# Curated website media may be versioned under website/assets/.

@@ -1,0 +1,15 @@
+{
+  "dataset_location": "../data/scenes",
+  "target_seq": "example_scene",
+  "sample_cache_dir": "../data/point_cache",
+  "expected_selected_views": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "triangulation_init_root": "../data/triangulation",
+  "semantic_cache_path": "../data/example_scene_dinov3.pt",
+  "common_init_checkpoint": "../weights/common_init.pth",
+  "cotracker_encoder_checkpoint": "../weights/cotracker3_encoder_params.pth"
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "track3d_dinov3_native_v1",
+  "repository": "https://github.com/facebookresearch/dinov3.git",
+  "commit": "6876159a11b4df116f30f667f8c9888617df0751",
+  "constructor": "dinov3_vits16",
+  "checkpoint": "dinov3_vits16_pretrain_lvd1689m-08c60483.pth",
+  "checkpoint_sha256": "08c60483bc63c04f533611e34bf70b120eedb7240f469bc16e9e20bf344b941d",
+  "patch_size": 16,
+  "prefix_tokens": 5,
+  "hidden_size": 384
+}

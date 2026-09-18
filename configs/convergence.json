@@ -1,0 +1,23 @@
+{
+  "schedule": {
+    "kind": "loss_plateau",
+    "peak_lr": 0.0005,
+    "floor_lr": 4e-06,
+    "warmup": 5,
+    "drop_factor": 0.2,
+    "min_lr_updates": 30,
+    "lr_patience_windows": 2
+  },
+  "stopping": {
+    "enabled": true,
+    "window": 10,
+    "patience": 2,
+    "min_updates": 100,
+    "relative_change": 0.01,
+    "cv": 0.05,
+    "component_change": 0.01,
+    "coverage_change": 0.005,
+    "coverage_drop": 0.01
+  },
+  "restart_schedule": false
+}
